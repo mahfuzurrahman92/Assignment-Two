@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+
+}
+
+body{
+  background-color: var(--background-primary);
+}
+
+/* common style  */
+:root{
+    --primary-color:#E6533C;
+    --text-primary-color:#FFFFFF;
+    --text-secondary-color:rgba(255, 255, 255, 0.5);
+    --background-secondary:rgba(34, 34, 34, 1);
+    --background-primary:black;
+}
+
+.display-flex{
+  display: flex;
+}
+
+/* header */
+
+/* navbar */
+nav{
+  justify-content: space-between;
+ 
+}
+
+.nav-tittle{
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size:2rem ;
+}
+ul{
+  border: 1px solid var(--text-secondary-color);
+  border-radius: 1000px;
+  padding: 5px 
+  
+  
+  
+  
+  
+}
+#home{
+  background-color: #E6533C;
+  border-radius: 1000px;
+  padding: 5px;
+  height: 30px;
+}
+.nav-item{
+  list-style: none;
+  margin-right: 10px;
+
+}
+ul li a {
+  text-decoration: none;
+  color: var(--text-primary-color);
+}
