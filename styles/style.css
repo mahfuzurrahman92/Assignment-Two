@@ -150,3 +150,47 @@ body {
   background-color: var(--primary-color);
   border-radius: 50%;
  }
+ /* media query small device */
+ @media screen and (max-width: 576px) {
+    .banner ,
+    .nav-list
+    {
+      flex-direction: column;
+    }
+    .nav-bar ,
+    .banner ,
+    .banner-btn ,
+    .banner-image{
+      margin: 5px auto;
+    }
+   .nav-link{
+    display: none;
+    
+   }
+   .nav-list{
+    gap: 0px;
+    border: none;
+   }
+   
+   .nav-item{
+    width: 20px;
+    height: 2px;
+    background-color: #FFFFFF;
+    margin: 0px;
+    margin-bottom: 5px;
+
+   }
+   .banner-tittle{
+    margin-left: 10px;
+   font-size: 3rem;
+   font-weight: bold;
+  }
+  .banner-sub-tittle{
+    margin-left: 10px;
+    max-width: 300px;
+  }
+   .banner-btn{
+    margin-left: 50px;
+   }
+
+ }
