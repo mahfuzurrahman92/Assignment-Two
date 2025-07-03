@@ -23,7 +23,33 @@ body {
   padding: 0;
   color: var(--text-primary-color);
 }
-
+/* common style */
+.text{
+  color: var(--text-secondary-color);
+}
+/* button style */
+.btn-p{
+  background-color: #E6533C;
+  color: #FFFFFF;
+  border-radius: 30px;
+  padding: 10px;
+  width: 200px;
+  font-size: large;
+  border: none;
+  margin-right: 10px;
+}
+.btn-s{
+  border: 2px solid white;
+  color: #FFFFFF;
+  background: none;
+}
+ 
+/* section width setup */
+.nav-bar ,
+.banner {
+  max-width: 900px;
+  margin: 10px auto;
+}
 /* Flex utility */
 .display-flex {
   display: flex;
@@ -35,8 +61,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background-color: var(--background-secondary);
-  border-bottom: 1px solid var(--text-secondary-color);
+  
+  /* border-bottom: 1px solid var(--text-secondary-color); */
 }
 
 /* Title */
@@ -73,3 +99,54 @@ body {
   background-color: var(--primary-color);
   color: #fff;
 }
+
+/* banner */
+/* banner tittle */
+.banner-tittle{
+  font-size: 4rem;
+  font-weight: bold;
+}
+/* #shape{
+  font-family: monospace;
+} */
+ .banner-sub-tittle{
+  color: var(--text-secondary-color);
+  margin-top: 20px;
+  margin-bottom: 20px;
+ }
+ .band{
+  border: 1px solid red;
+  border-radius: 10px;
+  height: 100px;
+  width: 180px;
+  background-color: var(--background-secondary);
+  padding: 20px;
+  justify-content: space-between;
+
+ }
+ /* band style with id */
+ #band-top{
+
+ }
+ #band-bottom{
+   justify-content: space-between;
+   align-items: center;
+   /* margin-top: -100px; */
+   
+ }
+ /* number style */
+ .num{
+  font-weight: bold;
+  font-size: 2rem;
+
+ }
+ #num{
+   font-weight: bold;
+  font-size: 3rem;
+ }
+ #circle{
+  height: 50px;
+  width: 50px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+ }
