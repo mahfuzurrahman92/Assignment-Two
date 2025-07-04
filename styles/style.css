@@ -55,7 +55,8 @@ h3 {
 .nav-bar ,
 .banner ,
 #habits ,
-#run{
+#run ,
+#training{
   max-width: 900px;
   margin: 25px auto;
 }
@@ -216,6 +217,34 @@ h3 {
   
 }
 
+/* trainings */
+.train-container{
+  /* display: grid; */
+  /* grid-template-columns: repeat(3,1fr); */
+  /* grid-template-rows: 50% 50%; */
+  
+  /* height: 500px; */
+  /* width: 100%; */
+}
+.train-container img{
+  width: 100%;
+  height: 100%;
+}
+
+.train-con-1{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: 30% 40% 30%;
+}
+.train-con-2{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: 40% 30% 30%;
+}
+
+
+
+
 
  /* media query small device */
  @media screen and (max-width: 576px) {
@@ -263,6 +292,11 @@ h3 {
    }
    .habit-container{
     grid-template-columns: repeat(1,1fr);
+   }
+   .run-img{
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
    }
 
  }
