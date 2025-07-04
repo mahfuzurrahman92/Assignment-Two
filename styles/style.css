@@ -193,7 +193,8 @@ h3 {
     .nav-bar ,
     .banner ,
     .banner-btn ,
-    .banner-image{
+    .banner-image ,
+    .habit{
       margin: 5px auto;
     }
    .nav-link{
@@ -224,6 +225,9 @@ h3 {
   }
    .banner-btn{
     margin-left: 50px;
+   }
+   .habit-container{
+    grid-template-columns: repeat(1,1fr);
    }
 
  }
