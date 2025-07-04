@@ -54,7 +54,8 @@ h3 {
 /* section width setup */
 .nav-bar ,
 .banner ,
-#habits {
+#habits ,
+#run{
   max-width: 900px;
   margin: 25px auto;
 }
@@ -158,7 +159,15 @@ h3 {
  }
 
  /* Habits */
-#habits h3 , p{
+#habits h3 {
+  text-align: center;
+  
+}
+#habits p {
+  text-align: center;
+  
+}
+.habit-description{
   text-align: center;
   
 }
@@ -183,10 +192,36 @@ h3 {
   border-radius: 50%;
 }
 
+/* run secrion */
+#run{
+  background-color: var(--background-secondary);
+  border-radius: 10px;
+  padding: 30px;
+}
+.run-container{
+  flex: 1;
+  justify-content: space-between;
+  
+}
+.run-image{
+ max-width: 300px;
+ max-height: 500px;
+  
+}
+.run-img{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+
+  
+}
+
+
  /* media query small device */
  @media screen and (max-width: 576px) {
     .banner ,
-    .nav-list
+    .nav-list ,
+    .run-container
     {
       flex-direction: column;
     }
