@@ -65,7 +65,8 @@ h3 {
 #training ,
 .bmi-container ,
 .bmi-calc ,
-.team-container{
+.team-container ,
+.footer-container{
   max-width: 900px;
   margin: 25px auto;
 }
@@ -299,14 +300,32 @@ label input{
   height: 100%;
   border-radius: 10px;
 }
-
-
+/* footer */
+footer{
+  background-color: var(--background-secondary);
+}
+.footer-container{
+  justify-content: space-evenly;
+}
+.footer-container h1{
+   font-size: 3rem;
+  font-weight: bold;
+  
+}
+hr{
+  color: var(--text-secondary-color);
+  max-width: 900px;
+}
+.last{
+  text-align: center;
+}
  /* media query small device */
  @media screen and (max-width: 576px) {
     .banner ,
     .nav-list ,
     .run-container ,
-    .bmi-container
+    .bmi-container ,
+    .footer-container
     {
       flex-direction: column;
     }
@@ -365,5 +384,8 @@ label input{
 }
 .half{
   width: 100%;
+}
+.footer-container{
+  margin-left: 10px;
 }
  }
