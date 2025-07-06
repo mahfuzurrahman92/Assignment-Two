@@ -34,6 +34,10 @@ h3 {
   font-size: 3rem;
   font-weight: bold;
 }
+.tittle-2{
+  font-size: 2rem;
+  font-weight: bold;
+}
 /* button style */
 .btn-p{
   background-color: #E6533C;
@@ -44,6 +48,8 @@ h3 {
   font-size: large;
   border: none;
   margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .btn-s{
   border: 2px solid white;
@@ -56,7 +62,8 @@ h3 {
 .banner ,
 #habits ,
 #run ,
-#training{
+#training ,
+.bmi-container{
   max-width: 900px;
   margin: 25px auto;
 }
@@ -242,6 +249,39 @@ h3 {
   grid-template-columns: 40% 30% 30%;
 }
 
+/* Bmi section */
+#bmi{
+  background-color: var(--background-secondary);
+  padding: 20px;
+}
+
+/* bmi-container */
+
+/* bmi chart design */
+table , tr ,td , th{
+  border: 1px solid var(--text-secondary-color);
+  border-collapse: collapse;
+  padding: 5px;
+  text-align: center;
+}
+tr td {
+  color: var(--text-secondary-color);
+}
+/* form */
+label input{
+  margin-bottom: 5px;
+  border-radius: 10px;
+  background-color: lightgray;
+  height: 50px;
+  padding: 5px;
+}
+.ful{
+  width: 510px;
+}
+.half{
+  width: 250px;
+}
+
 
 
 
@@ -249,7 +289,8 @@ h3 {
  @media screen and (max-width: 576px) {
     .banner ,
     .nav-list ,
-    .run-container
+    .run-container ,
+    .bmi-container
     {
       flex-direction: column;
     }
@@ -289,7 +330,7 @@ h3 {
    .banner-btn{
     margin-left: 50px;
    }
-   .habit-container{
+   .habit-container {
     grid-template-columns: repeat(1,1fr);
    }
    .run-img{
@@ -297,5 +338,15 @@ h3 {
     height: 100%;
     margin-top: 10px;
    }
-
+   .train-con-1 ,
+   .train-con-2{
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+   }
+   .ful{
+  width: 100%;
+}
+.half{
+  width: 100%;
+}
  }
