@@ -63,7 +63,9 @@ h3 {
 #habits ,
 #run ,
 #training ,
-.bmi-container{
+.bmi-container ,
+.bmi-calc ,
+.team-container{
   max-width: 900px;
   margin: 25px auto;
 }
@@ -167,7 +169,8 @@ h3 {
  }
 
  /* Habits */
-#habits h3 {
+#habits h3 ,
+.bmi-calc {
   text-align: center;
   
 }
@@ -282,7 +285,20 @@ label input{
   width: 250px;
 }
 
-
+/* team */
+.team-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--background-secondary);
+}
+.team-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
 
 
  /* media query small device */
@@ -330,7 +346,8 @@ label input{
    .banner-btn{
     margin-left: 50px;
    }
-   .habit-container {
+   .habit-container ,
+   .team-container {
     grid-template-columns: repeat(1,1fr);
    }
    .run-img{
